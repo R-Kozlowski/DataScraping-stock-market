@@ -150,7 +150,7 @@ msg.attach(part)
 smtpObj = smtplib.SMTP('smtp.poczta.onet.pl', 587)
 smtpObj.ehlo()
 smtpObj.starttls()
-smtpObj.login('radek.87@onet.eu', 'rkleonid1')
+smtpObj.login('email','password')
 smtpObj.sendmail(od, do, msg.as_string()) 
 smtpObj.quit()
 
